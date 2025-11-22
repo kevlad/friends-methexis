@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare Methexis Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>METHEXIS</h1>
+            <p class="subtitle">Wine & Friends</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Înregistrare Club</h2>
+            <p class="description">Completează formularul pentru a deveni membru al clubului Methexis Friends</p>
+
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="prenume">Prenume *</label>
+                    <input type="text" id="prenume" name="prenume" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nume">Nume *</label>
+                    <input type="text" id="nume" name="nume" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefon">Telefon Mobil *</label>
+                    <input type="tel" id="telefon" name="telefon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_nasterii">Data Nașterii</label>
+                    <input type="date" id="data_nasterii" name="data_nasterii">
+                </div>
+
+                <div class="form-group">
+                    <label for="referred_by">Recomandat de</label>
+                    <input type="text" id="referred_by" name="referred_by" placeholder="Nume persoană care te-a recomandat">
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" id="gdpr" name="gdpr" required>
+                        Sunt de acord cu prelucrarea datelor personale conform GDPR *
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Trimite Cererea</span>
+                    <span class="btn-loader" style="display: none;">Se trimite...</span>
+                </button>
+
+                <div class="message success" id="successMessage" style="display: none;">
+                    ✓ Înregistrare reușită! Vei primi un email când cererea ta va fi aprobată.
+                </div>
+
+                <div class="message error" id="errorMessage" style="display: none;">
+                    ✗ A apărut o eroare. Te rugăm să încerci din nou.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
